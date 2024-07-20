@@ -1,21 +1,20 @@
-function checkAnswer () {
-    //correct answer
+function checkAnswer() {
+    // Correct answer
     const correctAnswer = "4";
 
-    //Retrieve User's answer
+    // Retrieve user's answer
     const userAnswer = document.querySelector('input[name="quiz"]:checked')?.value;
 
-    //Get feedback element
+    // Get feedback element
     const feedback = document.getElementById('feedback');
 
-    //Comparing answers and providing feedback
+    // Compare answers and provide feedback
     if (userAnswer === correctAnswer) {
-        feedback.textContent = "Correct! Well done ."
+        feedback.textContent = "Correct! Well done.";
     } else {
-        feedback.textContent = "That's Incorrect. Try Again?"
+        feedback.textContent = "That's incorrect. Try again!";
     }
 }
 
-
-//adding event listener to the submit button
-document.getElementById('submit-answer').addEventListener('click', CheckAnswer);
+// Add event listener to the submit button
+document.getElementById('submit-answer').addEventListener('click', checkAnswer);
