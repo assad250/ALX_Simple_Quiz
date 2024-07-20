@@ -1,4 +1,4 @@
-function CheckAnswer () {
+function checkAnswer () {
     //correct answer
     const correctAnswer = "4";
 
